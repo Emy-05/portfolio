@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="././asset/css/normalize.css" />
+    <link rel="stylesheet" href="././asset/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/cf4160a64e.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#presentation">A propos</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="toggle">
+          <i class="fa-solid fa-bars ouvrir"></i>
+          <i class="fa-solid fa-xmark fermer"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="presentation">
+        <img src="asset/images/avatar.png" alt="avatar" />
+        <div class="main-description">
+        <h1>Web Developpeuse</h1>
+        <div class="resume">Suite à une reconversion professionnelle dans le développement web, j'ai eu l'opportunité de pouvoir suivre une formation qui m'a permis d'acquérir les bases dans pas mal de langages front et back-end. Aujourd'hui je ne souhaite qu'approfondir ces connaissances pour m'améliorer, toujours un peu plus.</div>
+      </div>
+      </section>
+
+      <section id="projects">
+        <h2>Voici quelques uns de mes projets</h2>
+        <div class="listing-projects">
+          <div class="detail-project">
+          <a href="https://github.com/Emy-05/projet-orbnb"><img class="project_img" src="./asset/images/project1.png" alt="Image du projet Orbnb">
+          <h4>Page web Orbnb</h4></a>
+          <p> Html, Css</p>
+          </div>
+          <div class="detail-project">
+            <a href="https://github.com/Emy-05/generateur"><img class="project_img" src="./asset/images/project2.png" alt="Image du générateur">
+            <h4>Générateur de citations</h4></a>
+            <p> Html, Css & Javascript</p>
+            </div>
+            <div class="detail-project">
+              <a href="https://github.com/Emy-05/portfolio"><img class="project_img" src="./asset/images/project3.png" alt="Image du portfolio">
+              <h4>Portfolio</h4></a>
+              <p> Html, Css & Javascript</p>
+              </div>
+              <div class="detail-project">
+                <a href="https://dev.choeurdegamers.fr/"><img class="project_img" src="./asset/images/project4.png" alt="Image du Projet Orbnb">
+                <h4>Association Choeur de Gamers</h4></a>
+                <p> Wordpress & Elementor Pro</p>
+                </div>
+                  <div class="detail-project">
+                    <a href="https://github.com/Emy-05/lineshop"><img class="project_img" src="./asset/images/project5.png" alt="Image du Projet symfony">
+                    <h4>Boutique Lineshop</h4></a>
+                    <p> Symfony & Bootstrap</p>
+                    </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2> Pour me contacter</h2>
+        <div class="form-contact">
+        <form id="contact" action="send.php" method="post">
+            <div class="champs-contact">
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" id="nom" placeholder="Votre Nom" required>
+            </div>
+
+            <div class="champs-contact">
+              <label for="prenom">Prénom</label>
+              <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom">
+            </div>
+
+            <div class="champs-contact">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Votre Email" required>
+            </div>
+             
+            <div class="champs-contact">
+              <label for="message">Votre message</label><br>
+              <textarea rows="10" id="message" name="message" placeholder="Votre Message ici" required></textarea>
+              <div class ="error"></div>
+            </div>
+
+            <div><button type="submit" id="envoyer">Envoyer le message</div>
+          </form>
+          <p> En cliquant sur Envoyer, vous acceptez que vos données soient utilisées dans le but de vous recontacter (et seulement dans ce but) conformément à la loi sur la protection de vos données.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer-title">Copyright - 2023. Tous droits réservés.</p>
+      <ul class="social-icons">
+        <li><a href="https://www.linkedin.com/in/emilie-a-934500230/"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/Emy-05"><i class="fa-brands fa-square-github"></i></a></li>
+      </ul>
+    </footer>
+    <script src="././asset/js/nav.js"></script>
+    <script src="././asset/js/validation.js"></script>
+  </body>
+</html>
