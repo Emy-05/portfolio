@@ -62,8 +62,6 @@ nav li {
     display:none;
 }
 
-
-
 main{
     display: flex;
     flex-direction: column;
@@ -126,6 +124,7 @@ h2 {
 h4 {
     margin: 5px;
     color: var(--black);
+    font-size: 1rem;
 }
 
 .detail-project p {
@@ -219,7 +218,9 @@ ul.social-icons {
     color: var(--white);
 }
 
-@media (max-width: 768px){
+
+
+@media (max-width: 810px){
 
     header {
         padding:1rem;
@@ -295,13 +296,20 @@ ul.social-icons {
     h2 {
         font-size: 1.5rem;
     }
-
+    
     .listing-projects {
         width: 95%;
     }
     .detail-project {
         width: 70%;
         margin-bottom: 25px;
+        height: 220px;
+    }
+    .project_img{
+        height: 63%;
+    }
+    .detail-project p{
+        font-size: 0.9rem;
     }
 
     .form-contact {
@@ -310,4 +318,3 @@ ul.social-icons {
 
 
 }
-
